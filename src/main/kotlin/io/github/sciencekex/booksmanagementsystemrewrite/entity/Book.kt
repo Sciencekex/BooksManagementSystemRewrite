@@ -10,7 +10,7 @@ data class Book (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
-    val bookNUmber: String,
+    val bookNumber: String,
     val bookName: String,
     val bookType: String,
     val bookPrize: Double,

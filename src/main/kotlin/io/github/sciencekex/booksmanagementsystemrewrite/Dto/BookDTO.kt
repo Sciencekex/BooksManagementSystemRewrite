@@ -7,8 +7,8 @@ data class BookDTO(
     val bookName: String,
     val bookType: String,
     val bookPrize: Double,
-    val author: String? = null,
-    val bookPublisher: String? = null
+    val author: String,
+    val bookPublisher: String
 ) {
     fun toEntity(): Book = Book(
         bookNumber = bookNumber,
@@ -19,3 +19,4 @@ data class BookDTO(
         bookPublisher = bookPublisher
     )
 }
+
